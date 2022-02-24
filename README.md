@@ -244,6 +244,5 @@ plot_pred_ground(fetch_list, infer_labels_np)
 ## 提交链接
 ### aistudio链接：
 
-### github链接：
-[github链接](https://github.com/Zhuoshi-Li/Project-for-homework4/edit/main/README.md)
-### gitee链接：
+[github链接](https://github.com/Zhuoshi-Li/Project-for-homework4)
+[gitee链接](https://gitee.com/Zhuoshi--Li/Project-for-homework4)

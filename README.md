@@ -116,6 +116,7 @@ def draw_train_process(iters, train_costs):
     plt.plot(iters, train_costs, color='red', label='training cost')
     plt.show()
 ```
+
 ![Obvious](https://github.com/Zhuoshi-Li/Project-for-homework4/blob/main/Obvious.png)
 ![Analysis](https://github.com/Zhuoshi-Li/Project-for-homework4/blob/main/Analysis.png)
 ![Normalization](https://github.com/Zhuoshi-Li/Project-for-homework4/blob/main/Normalization.png)
@@ -189,6 +190,7 @@ draw_train_process(train_nums, train_costs)
 * Pass:350,Cost:0.98337
 * Pass:400,Cost:0.62748
 * Pass:450,Cost:0.25535
+
 ![Accuracy](https://github.com/Zhuoshi-Li/Project-for-homework4/blob/main/Accuracy.png)
 ## 五、模型评估
 ```
@@ -232,6 +234,7 @@ plot_pred_ground(fetch_list, infer_labels_np)
 * No.50: infer result is 4.29,ground truth is 3.45
 * No.60: infer result is 3.86,ground truth is 3.00
 * Mean loss is: [1.18700965]
+
 ![Prediction](https://github.com/Zhuoshi-Li/Project-for-homework4/blob/main/Prediction.png)
 ## 六、总结与升华
 接近到项目的尾声时，需要进行主题的升华，也就是说明本项目的亮点，以及不足之处，后续应该如何改进等

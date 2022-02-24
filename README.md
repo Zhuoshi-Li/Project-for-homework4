@@ -116,6 +116,7 @@ def draw_train_process(iters, train_costs):
     plt.plot(iters, train_costs, color='red', label='training cost')
     plt.show()
 ```
+![Obvious](https://github.com/Zhuoshi-Li/Project-for-homework4/blob/main/Obvious.png)
 
 
 >模型参数

@@ -242,6 +242,6 @@ plot_pred_ground(fetch_list, infer_labels_np)
 >我是东北大学悉尼智能科技学院的大一新生，主修计算机科学与技术专业，对Al有着浓厚的兴趣，在本次飞桨领航团AI达人创造营收获颇丰，感受到讲师的极其扎实的专业水平和育人之心。我的兴趣方向是目标检测，希望在此学习基础上，能找机会利用优质免费的飞桨平台开发一个目标检测的项目，谢谢！
 
 ## 提交链接
-* [aistudio链接]()
+* [aistudio链接](https://aistudio.baidu.com/aistudio/projectdetail/3521857)
 * [github链接](https://github.com/Zhuoshi-Li/Project-for-homework4)
 * [gitee链接](https://gitee.com/Zhuoshi--Li/Project-for-homework4)

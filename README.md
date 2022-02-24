@@ -117,7 +117,8 @@ def draw_train_process(iters, train_costs):
     plt.show()
 ```
 ![Obvious](https://github.com/Zhuoshi-Li/Project-for-homework4/blob/main/Obvious.png)
-
+![Analysis](https://github.com/Zhuoshi-Li/Project-for-homework4/blob/main/Analysis.png)
+![Normalization](https://github.com/Zhuoshi-Li/Project-for-homework4/blob/main/Normalization.png)
 
 >模型参数
 >>lr_schedule：learning_rate=0.001

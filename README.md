@@ -116,3 +116,13 @@ def draw_train_process(iters, train_costs):
     plt.plot(iters, train_costs, color='red', label='training cost')
     plt.show()
 ```
+>模型参数
+>>lr_schedule：learning_rate=0.001
+
+>>optimize： optimizer = paddle.optimizer.SGD(learning_rate=0.001, parameters=model.parameters())
+
+>>epoch： EPOCH_NUM = 500
+
+>>batch_size：INFER_BATCH_SIZE = 63
+
+>>Loss function： paddle.nn.MSELoss()

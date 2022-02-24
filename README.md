@@ -30,6 +30,7 @@
 * 其思路是，假设人力资源数据集中的工资、活跃度等因素和评分效益之间的关系可以被属性间的线性组合描述。在模型训练阶段，让假设的预测结果和真实值之间的误差越来越小。在模型预测阶段，预测器会读取训练好的模型，对从未遇见过的人力资源属性进行效益初步评估。
 
 ## 四、模型训练
+```
 import paddle
 import numpy as np
 import os
@@ -114,3 +115,4 @@ def draw_train_process(iters, train_costs):
     plt.ylabel("cost", fontsize=13)
     plt.plot(iters, train_costs, color='red', label='training cost')
     plt.show()
+```

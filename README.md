@@ -116,6 +116,8 @@ def draw_train_process(iters, train_costs):
     plt.plot(iters, train_costs, color='red', label='training cost')
     plt.show()
 ```
+
+
 >模型参数
 >>lr_schedule：learning_rate=0.001
 
@@ -209,7 +211,4 @@ def plot_pred_ground(pred, ground):
 
 plot_pred_ground(fetch_list, infer_labels_np)
 ```
-## 六、总结与升华
 
-
-## 七、个人总结

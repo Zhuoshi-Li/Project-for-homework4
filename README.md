@@ -126,3 +126,51 @@ def draw_train_process(iters, train_costs):
 >>batch_size：INFER_BATCH_SIZE = 63
 
 >>Loss function： paddle.nn.MSELoss()
+
+```
+import paddle.nn.functional as F 
+y_preds = []
+labels_list = []
+
+def train(model):
+    print('start training ... ')
+    # 开启模型训练模式
+    model.train()
+    EPOCH_NUM = 500
+    train_num = 0
+    optimizer = paddle.optimizer.SGD(learning_rate=0.001, parameters=model.parameters())
+    for epoch_id in range(EPOCH_NUM):
+        # 在每轮迭代开始之前，将训练数据的顺序随机的打乱
+        np.random.shuffle(train_data)
+        # 将训练数据进行拆分，每个batch包含20条数据
+        mini_batches = [train_data[k: k+BATCH_SIZE] for k in range(0, len(train_data), BATCH_SIZE)]
+        for batch_id, data in enumerate(mini_batches):
+            features_np = np.array(data[:, :3], np.float64)
+            labels_np = np.array(data[:, -1:], np.float64)
+            features = paddle.to_tensor(features_np)
+            labels = paddle.to_tensor(labels_np)
+            # 前向计算
+            y_pred = model(features)
+            cost = F.mse_loss(y_pred, label=labels)
+            train_cost = cost.numpy()[0]
+            # 反向传播
+            cost.backward()
+            # 最小化loss，更新参数
+            optimizer.step()
+            # 清除梯度
+            optimizer.clear_grad()
+            
+            if batch_id%30 == 0 and epoch_id%50 == 0:
+                print("Pass:%d,Cost:%0.5f"%(epoch_id, train_cost))
+
+            train_num = train_num + BATCH_SIZE
+            train_nums.append(train_num)
+            train_costs.append(train_cost)
+        
+model = Regressor()
+train(model)
+
+matplotlib.use('TkAgg')
+%matplotlib inline
+draw_train_process(train_nums, train_costs)
+```

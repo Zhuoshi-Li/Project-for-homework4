@@ -230,3 +230,16 @@ plot_pred_ground(fetch_list, infer_labels_np)
 * No.50: infer result is 4.29,ground truth is 3.45
 * No.60: infer result is 3.86,ground truth is 3.00
 * Mean loss is: [1.18700965]
+
+## 六、总结与升华
+接近到项目的尾声时，需要进行主题的升华，也就是说明本项目的亮点，以及不足之处，后续应该如何改进等
+
+## 七、个人总结
+该部分也是项目最后一阶段，需要作者介绍自己，以及作者的兴趣方向等，最后在下面附上作者的个人主页链接
+
+## 提交链接
+### aistudio链接：
+
+### github链接：
+
+### gitee链接：

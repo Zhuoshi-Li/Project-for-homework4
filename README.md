@@ -176,17 +176,17 @@ matplotlib.use('TkAgg')
 %matplotlib inline
 draw_train_process(train_nums, train_costs)
 ```
-start training ... 
-Pass:0,Cost:20.46077
-Pass:50,Cost:1.35356
-Pass:100,Cost:0.71079
-Pass:150,Cost:0.31794
-Pass:200,Cost:0.54955
-Pass:250,Cost:0.60700
-Pass:300,Cost:0.41050
-Pass:350,Cost:0.98337
-Pass:400,Cost:0.62748
-Pass:450,Cost:0.25535
+* start training ... 
+* Pass:0,Cost:20.46077
+* Pass:50,Cost:1.35356
+* Pass:100,Cost:0.71079
+* Pass:150,Cost:0.31794
+* Pass:200,Cost:0.54955
+* Pass:250,Cost:0.60700
+* Pass:300,Cost:0.41050
+* Pass:350,Cost:0.98337
+* Pass:400,Cost:0.62748
+* Pass:450,Cost:0.25535
 
 ## 五、模型评估
 ```

@@ -1,5 +1,5 @@
 # 人力资源“综合效益”评估——多元线性回归
-## 一.项目背景介绍
+## 一、项目背景介绍
 * 选择（[人力资源数据集](https://aistudio.baidu.com/aistudio/datasetdetail/106631/0) ）数据集，做数据可视化分析，有效用于调节整体人力资源的多样性和激发个体优势潜能。
 ### 项目背景及意义：
 
@@ -209,3 +209,7 @@ def plot_pred_ground(pred, ground):
 
 plot_pred_ground(fetch_list, infer_labels_np)
 ```
+## 六、总结与升华
+
+
+## 七、个人总结

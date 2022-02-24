@@ -222,11 +222,11 @@ def plot_pred_ground(pred, ground):
 
 plot_pred_ground(fetch_list, infer_labels_np)
 ```
-No.0: infer result is 4.15,ground truth is 4.30
-No.10: infer result is 4.00,ground truth is 2.34
-No.20: infer result is 4.29,ground truth is 4.24
-No.30: infer result is 4.15,ground truth is 3.02
-No.40: infer result is 4.15,ground truth is 3.66
-No.50: infer result is 4.29,ground truth is 3.45
-No.60: infer result is 3.86,ground truth is 3.00
-Mean loss is: [1.18700965]
+* No.0: infer result is 4.15,ground truth is 4.30
+* No.10: infer result is 4.00,ground truth is 2.34
+* No.20: infer result is 4.29,ground truth is 4.24
+* No.30: infer result is 4.15,ground truth is 3.02
+* No.40: infer result is 4.15,ground truth is 3.66
+* No.50: infer result is 4.29,ground truth is 3.45
+* No.60: infer result is 3.86,ground truth is 3.00
+* Mean loss is: [1.18700965]

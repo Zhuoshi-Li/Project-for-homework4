@@ -176,6 +176,17 @@ matplotlib.use('TkAgg')
 %matplotlib inline
 draw_train_process(train_nums, train_costs)
 ```
+start training ... 
+Pass:0,Cost:20.46077
+Pass:50,Cost:1.35356
+Pass:100,Cost:0.71079
+Pass:150,Cost:0.31794
+Pass:200,Cost:0.54955
+Pass:250,Cost:0.60700
+Pass:300,Cost:0.41050
+Pass:350,Cost:0.98337
+Pass:400,Cost:0.62748
+Pass:450,Cost:0.25535
 
 ## 五、模型评估
 ```
@@ -211,4 +222,11 @@ def plot_pred_ground(pred, ground):
 
 plot_pred_ground(fetch_list, infer_labels_np)
 ```
-
+No.0: infer result is 4.15,ground truth is 4.30
+No.10: infer result is 4.00,ground truth is 2.34
+No.20: infer result is 4.29,ground truth is 4.24
+No.30: infer result is 4.15,ground truth is 3.02
+No.40: infer result is 4.15,ground truth is 3.66
+No.50: infer result is 4.29,ground truth is 3.45
+No.60: infer result is 3.86,ground truth is 3.00
+Mean loss is: [1.18700965]

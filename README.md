@@ -150,8 +150,8 @@ def train(model):
         # 将训练数据进行拆分，每个batch包含20条数据
         mini_batches = [train_data[k: k+BATCH_SIZE] for k in range(0, len(train_data), BATCH_SIZE)]
         for batch_id, data in enumerate(mini_batches):
-            features_np = np.array(data[:, :3], np.float64)
-            labels_np = np.array(data[:, -1:], np.float64)
+            features_np = np.array(data[:, :3], np.float32)
+            labels_np = np.array(data[:, -1:], np.float32)
             features = paddle.to_tensor(features_np)
             labels = paddle.to_tensor(labels_np)
             # 前向计算
@@ -192,13 +192,15 @@ draw_train_process(train_nums, train_costs)
 * Pass:450,Cost:0.25535
 
 ![Accuracy](https://github.com/Zhuoshi-Li/Project-for-homework4/blob/main/Accuracy.png)
+
+* 可以从上图看出，随着训练轮次的增加，损失在呈降低趋势。但由于每次仅基于少量样本更新参数和计算损失，所以损失下降曲线会出现震荡。
 ## 五、模型评估
 ```
 # 获取预测数据
 INFER_BATCH_SIZE = 63
 
-infer_features_np = np.array([data[:3] for data in test_data]).astype("float64")
-infer_labels_np = np.array([data[-1] for data in test_data]).astype("float64")
+infer_features_np = np.array([data[:3] for data in test_data]).astype("float32")
+infer_labels_np = np.array([data[-1] for data in test_data]).astype("float32")
 
 infer_features = paddle.to_tensor(infer_features_np)
 infer_labels = paddle.to_tensor(infer_labels_np)
